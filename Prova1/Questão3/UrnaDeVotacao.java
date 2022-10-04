@@ -1,19 +1,22 @@
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class UrnaDeVotacao {
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		String s, ganhador;
 		String entrada;
 		int count1=0,count2=0,count3=0, totalVotos=0, votoInvalido=0; 
 		
-		s = "Digite o código de seu candidato \n"+
-			"    111 - Maria da Silva \n" +
-			"    222 - Pedro de Araújo \n" +
-			"    333 - José de Souza \n";
+		System.out.println("Diga quantas pessoas vão votar: ");
+		int nmrPessoas = sc.nextInt();
+
 		
-		for (int i=0; i<5; i++) {	
-			entrada = JOptionPane.showInputDialog(s);
+		do{	
+			System.out.println("Digite o código de seu candidato \n"+
+				"    111 - Maria da Silva \n" +
+				"    222 - Pedro de Araújo \n" +
+				"    333 - José de Souza \n");
 		
 			if (entrada.equals("111")) {
 				count1++;
@@ -25,7 +28,7 @@ public class UrnaDeVotacao {
 			}else{
 				votoInvalido++;
 			}
-		}
+		}while(contador != nmrPessoas);
 			
 		if (count1>count2 && count1>count3) {
 			ganhador = "Maria Silva";
