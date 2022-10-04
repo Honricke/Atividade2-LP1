@@ -1,0 +1,4 @@
+1- O arquivo faz uma votação simulando uma urna, no qual há uma votação entre 3 candidatos
+e você irá votar com os seus respectivos números, o candidato vencedor será o que receber mais votos.
+
+2-
