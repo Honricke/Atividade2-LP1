@@ -1,4 +1,5 @@
 1- O arquivo faz uma votação simulando uma urna, no qual há uma votação entre 3 candidatos
 e você irá votar com os seus respectivos números, o candidato vencedor será o que receber mais votos.
 
-2-
+2- Erro 1: Sintaxe das linhas 22 a 25, que não tem a chave para abrir e fechar o else if e o else.
+   Erro 2: 

@@ -19,10 +19,12 @@ public class UrnaDeVotacao {
 		
 			if (entrada.equals("111")) {
 				count1++;
-			}else if (entrada == "222")
+			}else if (entrada == "222"){
 				count2++;
-				else
-					count3++;
+			}
+			else{
+				count3++;
+			}
 		}
 			
 		if (count1>count2 && count1>count3) {
