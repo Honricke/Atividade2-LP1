@@ -1,29 +1,29 @@
 import javax.swing.JOptionPane;
-import java.lang.*;
 
 public class UrnaDeVotacao {
 
 	public static void main(String[] args) {
 		String s, ganhador;
-		String entrada, saida;
-		int count1=0,count2=0,count3=0, totalVotos=0; 
+		String entrada;
+		int count1=0,count2=0,count3=0, totalVotos=0, votoInvalido=0; 
 		
 		s = "Digite o código de seu candidato \n"+
 			"    111 - Maria da Silva \n" +
 			"    222 - Pedro de Araújo \n" +
 			"    333 - José de Souza \n";
 		
-		for (int i=0; i<5; i++) {
-		
+		for (int i=0; i<5; i++) {	
 			entrada = JOptionPane.showInputDialog(s);
 		
 			if (entrada.equals("111")) {
 				count1++;
-			}else if (entrada == "222"){
+			}else if (entrada.equals("222")){
 				count2++;
 			}
-			else{
+			else if(entrada.equals("333")){
 				count3++;
+			}else{
+				votoInvalido++;
 			}
 		}
 			

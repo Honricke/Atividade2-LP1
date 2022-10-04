@@ -2,4 +2,20 @@
 e você irá votar com os seus respectivos números, o candidato vencedor será o que receber mais votos.
 
 2- Erro 1: Sintaxe das linhas 22 a 25, que não tem a chave para abrir e fechar o else if e o else.
-   Erro 2: 
+   Erro 2: Más práticas, como a variável saída e o import java.lang.* que não são usados.
+   Erro 3: Na linha 21 o else if tente comparar com ==, mas em java seria feito com equals().
+   Erro 4: O else da linha 24 deveria ser um else if, pois pode haver algum voto inválido e contará para
+o candidato 3.
+
+3- A linha 18 à 27 será assim:
+
+    if (entrada.equals("111")) {
+        count1++;
+    }else if (entrada.equals("222")){
+        count2++;
+    }
+    else if(entrada.equals("333")){
+        count3++;
+    }else{
+        votoInvalido++;
+    }
